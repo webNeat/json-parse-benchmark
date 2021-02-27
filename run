@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# C++
+cd cpp
+echo "C++ simdjson"
+time ./main
+cd ..
+echo "---"
+
+# NodeJS
+cd nodejs
+echo "NodeJS default"
+time node default.js
+echo "---"
+echo "NodeJS simdjson"
+time node simdjson.js
+echo "---"
+echo "NodeJS require"
+time node require.js
+cd ..
+echo "---"
+
+# PHP
+cd php
+echo "PHP default"
+time php default.php
+cd ..
+echo "---"
+
+# Python
+cd python3
+echo "Python3 default"
+time python3 default.py
+cd ..

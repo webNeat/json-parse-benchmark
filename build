@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# C++
+cd cpp
+g++ -o main main.cpp simdjson.cpp
+cd ..
+
+# NodeJS
+cd nodejs
+npm i
+node generate > ../values.json
+cd ..
