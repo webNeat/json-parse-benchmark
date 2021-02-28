@@ -2,7 +2,7 @@
 
 # C++
 cd cpp
-g++ -o main main.cpp simdjson.cpp
+g++ -o main -std=c++14 main.cpp simdjson.cpp
 cd ..
 
 # NodeJS
